@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleiton Langa | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topo" id="inicio">
+
+    <nav class="menu">
+      <a class="logo" href="#inicio">CL</a>
+
+      <ul class="links">
+        <li><a href="#inicio" data-i18n="nav_inicio">Início</a></li>
+        <li><a href="#sobre" data-i18n="nav_sobre">Sobre Mim</a></li>
+        <li><a href="#portfolio" data-i18n="nav_portfolio">Projectos</a></li>
+        <li><a href="#cv" data-i18n="nav_cv">CV</a></li>
+        <li><a href="#contactos" data-i18n="nav_contactos">Contactos</a></li>
+      </ul>
+
+      <button id="btn-idioma" type="button"
+        aria-label="Mudar idioma / Change language">EN</button>
+    </nav>
+
+    <div class="hero">
+
+      <div class="hero-texto">
+        <h1>Cleiton da Serra Langa</h1>
+
+        <p class="descricao" data-i18n="hero_desc">
+          Estudante de Suporte Informático e aprendiz de Desenvolvimento Web.
+        </p>
+
+        <a class="botao" href="#portfolio" data-i18n="hero_botao">
+          Ver projectos
+        </a>
+      </div>
+
+      <img class="foto" src="img/foto.jpg" alt="Foto de Cleiton Langa">
+
+    </div>
+  </header>
+
+  <main>
+
+       <section id="sobre" class="secao">
+
+      <h2 data-i18n="sobre_titulo">Sobre Mim</h2>
+
+      <p class="bio" data-i18n="sobre_bio">
+        Sou moçambicano e frequento o curso de Suporte Informático no Instituto de Transportes e Comunicações (ITC), onde estou desde o ano de 2025. Gosto de perceber como as coisas funcionam por dentro e de construir páginas e pequenas aplicações que resolvem problemas reais.
+      </p>
+
+      <div class="duas-colunas">
+
+        <div class="caixa">
+          <h3 data-i18n="hab_titulo">Habilidades</h3>
+
+          <div class="habilidade">
+            <span>HTML5 e CSS3</span>
+            <span class="pct"></span>
+            <div class="barra">
+              <div class="nivel" data-nivel="65"></div>
+            </div>
+          </div>
+
+          <div class="habilidade">
+            <span>JavaScript</span>
+            <span class="pct"></span>
+            <div class="barra">
+              <div class="nivel" data-nivel="60"></div>
+            </div>
+          </div>
+
+          <div class="habilidade">
+            <span data-i18n="hab_api">Consumo de APIs (fetch e JSON)</span>
+            <span class="pct"></span>
+            <div class="barra">
+              <div class="nivel" data-nivel="20"></div>
+            </div>
+          </div>
+
+          <div class="habilidade">
+            <span data-i18n="hab_suporte">Suporte informático</span>
+            <span class="pct"></span>
+            <div class="barra">
+              <div class="nivel" data-nivel="70"></div>
+            </div>
+          </div>
+
+          <div class="habilidade">
+            <span data-i18n="hab_com">Comunicação profissional</span>
+            <span class="pct"></span>
+            <div class="barra">
+              <div class="nivel" data-nivel="75"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caixa">
+          <h3 data-i18n="int_titulo">Interesses</h3>
+
+          <ul>
+            <li data-i18n="int_web">Desenvolvimento web</li>
+            <li data-i18n="int_jogos">Jogos no navegador</li>
+            <li data-i18n="int_seg">Segurança informática</li>
+            <li data-i18n="int_apr">Aprender coisas novas em programação</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <h3 class="sub" data-i18n="lin_titulo">Línguas</h3>
+
+      <div class="tabela-caixa">
+
+        <table class="tabela">
+
+          <caption data-i18n="lin_cap">Nível em cada língua</caption>
+
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="lin_lingua">Língua</th>
+              <th scope="col" data-i18n="lin_fala">Fala</th>
+              <th scope="col" data-i18n="lin_le">Lê</th>
+              <th scope="col" data-i18n="lin_escreve">Escreve</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row" data-i18n="lin_pt">Português</th>
+              <td data-i18n="niv_nativo">Nativo</td>
+              <td data-i18n="niv_avancado">Avançado</td>
+              <td data-i18n="niv_avancado">Avançado</td>
+            </tr>
+
+            <tr>
+              <th scope="row" data-i18n="lin_en">Inglês</th>
+              <td data-i18n="niv_basico">Básico</td>
+              <td data-i18n="niv_intermedio">Intermédio</td>
+              <td data-i18n="niv_intermedio">Intermédio</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+
+    </section>
+
+    <section id="portfolio" class="secao">
+
+      <h2 data-i18n="port_titulo">Portfólio de Projectos</h2>
+
+      <div class="galeria">
+
+        <article class="projecto">
+
+          <div class="moldura">
+            <img
+              src="img/projeto1.png"
+              alt="Formulário de inscrição online"
+              data-i18n-alt="p1_alt">
+          </div>
+
+          <h3 data-i18n="p1_titulo">Inscrição Online</h3>
+
+          <p data-i18n="p1_desc">
+            Formulário HTML de inscrição online, com campos para os dados do candidato.
+          </p>
+
+        </article>
+
+        <article class="projecto">
+
+          <div class="moldura">
+            <img
+              src="img/projeto2.png"
+              alt="Jogo de apanhar objectos"
+              data-i18n-alt="p2_alt">
+          </div>
+
+          <h3 data-i18n="p2_titulo">Apanha Objectos</h3>
+
+          <p data-i18n="p2_desc">
+            Jogo no navegador em que o jogador apanha objectos que caem do ecrã. Feito com HTML, CSS e JavaScript.
+          </p>
+
+        </article>
+
+        <article class="projecto">
+
+          <div class="moldura">
+            <img
+              src="img/projeto3.png"
+              alt="Página de currículo"
+              data-i18n-alt="p3_alt">
+          </div>
+
+          <h3 data-i18n="p3_titulo">CV</h3>
+
+          <p data-i18n="p3_desc">
+            Página de currículo com dados pessoais, perfil académico, competências técnicas e tabela de línguas.
+          </p>
+
+        </article>
+
+        <article class="projecto">
+
+          <div class="moldura">
+            <img
+              src="img/projeto4.png"
+              alt="Formulário de candidatura online"
+              data-i18n-alt="p4_alt">
+          </div>
+
+          <h3 data-i18n="p4_titulo">Candidatura Online</h3>
+
+          <p data-i18n="p4_desc">
+            Formulário HTML de candidatura com vários tipos de campos e validação básica.
+          </p>
+
+        </article>
+
+      </div>
+    </section>
+
+       <section id="cv" class="secao">
+
+      <h2 data-i18n="cv_titulo">Curriculum Vitae</h2>
+
+      <p class="cv-descricao" data-i18n="cv_desc">
+        Consulta o meu currículo para conhecer melhor a minha formação académica, as minhas competências e os meus conhecimentos em Suporte Informático e Desenvolvimento Web.
+      </p>
+
+      <div class="cv-caixa">
+
+        <div class="cv-icone" aria-hidden="true">PDF</div>
+
+        <div class="cv-info">
+          <h3 data-i18n="cv_subtitulo">Cleiton da Serra Langa — Curriculum Vitae</h3>
+
+          <p data-i18n="cv_info">
+            Clica no botão para abrir o meu currículo.
+          </p>
+
+          <a
+            class="cv-botao"
+            href="documentos/cv-cleiton.pdf"
+            target="_blank"
+            rel="noopener"
+            data-i18n="cv_abrir">
+            Abrir CV
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contactos" class="secao">
+
+      <h2 data-i18n="cont_titulo">Contactos</h2>
+
+      <ul class="contactos">
+
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:cleitonlanga474@gmail.com">
+            cleitonlanga474@gmail.com
+          </a>
+        </li>
+
+        <li>
+          <strong>Telefone:</strong>
+          <a href="tel:+258850500056">
+            85 050 0056
+          </a>
+        </li>
+
+        <li>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/Cleiton455-ops"
+             target="_blank" rel="noopener">
+            Visitar GitHub
+          </a>
+        </li>
+
+        <li>
+          <strong>Facebook:</strong>
+          <a href="https://www.facebook.com/share/19gfvS9LWb/"
+             target="_blank" rel="noopener">
+            Visitar Facebook
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Cleiton da Serra Langa</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
